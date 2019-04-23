@@ -15,7 +15,7 @@ class Gacha(commands.Cog):
 
 
     def _convertList(self, rollList):
-        #move static tables to json + add dataIO
+        #eventually move to outside of this file
         rarityTable = {
             "S": 10,
             "A": 500,
@@ -90,7 +90,7 @@ class Gacha(commands.Cog):
     @commands.command()
     async def gacha(self, ctx, rollNumber : int = None):
         """
-        plays the game
+        Plays the gacha game.
         """
             
         #avoid overrolling
@@ -109,4 +109,13 @@ class Gacha(commands.Cog):
         for i in rolls:
             displayString = displayString + i + "\n"
         await ctx.send("```" + displayString + "```")
-        #await ctx.send(rollList)
+        #change to embed form, when I learn how
+    
+    @commands.command()
+    async def gachalist(self, ctx, listTier : str = None):
+        """
+        Shows the roll list with percentages. If a specific tier is specified, it will show only that tier instead.
+        """
+        
+        #if listTier = None:
+        await ctx.send("coming soon !!")
