@@ -1,0 +1,20 @@
+{
+  "author": [
+    "Mehified"
+  ],
+  "bot_version": [
+    3,
+    0,
+    0
+  ],
+  "description": "A currently self-only game of mahjong",
+  "hidden": false,
+  "install_msg": "mahjong installed. [p]mahjong for more.",
+  "requirements": [],
+  "short": "Mahjong",
+  "tags": [
+    "game",
+    "fun",
+    "random",
+  ]
+}
