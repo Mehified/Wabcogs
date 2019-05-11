@@ -52,7 +52,7 @@ class Gacha(commands.Cog):
             "Himsef": {},
             "Wineandbread": {},
             "V3NOMG": {},
-            "Brandon": {}
+            "Brandon": {},
             "Kinx": {}
         }
         dictB = {
