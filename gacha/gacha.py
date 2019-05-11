@@ -2,6 +2,7 @@ from random import randint
 from random import choice
 from redbot.core import commands
 from redbot.core import Config
+from redbot.core.data_manager import cog_data_path
 
 import dateutil.parser
 import discord
@@ -17,9 +18,9 @@ class Gacha(commands.Cog):
     def _convertList(self, rollList):
         #eventually move to outside of this file
         rarityTable = {
-            "S": 10,
+            "S": 15,
             "A": 500,
-            "B": 2000,
+            "B": 2500,
             "C": 10000
         }
         dictS = {
@@ -30,7 +31,9 @@ class Gacha(commands.Cog):
             "Daughter Arta": {},
             "T-Time Cosplay Pat": {},
             "GAYM": {},
-            "Roar": {}
+            "Roar": {},
+            "Sleeping Prim": {},
+            "Kinx, the Avatar of Idol Hell": {}
         }
         dictA = {
             "cho": {},
@@ -50,21 +53,25 @@ class Gacha(commands.Cog):
             "Wineandbread": {},
             "V3NOMG": {},
             "Brandon": {}
+            "Kinx": {}
         }
         dictB = {
             "10% Coupon": {},
             "Double Stuff Oreo": {},
             "Cast Iron Pan": {},
             "Killer Fork": {},
-            "Thunder Kids": {}
+            "Thunder Kids": {},
+            "Magic Stick": {},
+            "Scorching Shower": {}
         }
         dictC = {
-            "An Old Boot": {},
-            "A Torn Shirt": {},
-            "A Ripped Glove": {},
-            "A Tattered Scarf": {},
+            "Old Boot": {},
+            "Torn Shirt": {},
+            "Ripped Glove": {},
+            "Tattered Scarf": {},
             "Ripped Jeans": {},
             "Paper Knife": {},
+            "Straw Hat": {},
             "Literally Dogshit": {},
             "Stained Underwear": {}
         }
@@ -96,9 +103,13 @@ class Gacha(commands.Cog):
         #avoid overrolling
         if rollNumber is None:
             rollNumber = 10
-        elif rollNumber > 10:
+        elif rollNumber > 20:
             await ctx.send("Please don't be greedy.")
             return
+        elif rollNumber <= 0:
+            await ctx.send("You want me to take away your pulls?..")
+        else:
+            pass
             
         rollList = []
         while len(rollList) < rollNumber:
@@ -117,5 +128,4 @@ class Gacha(commands.Cog):
         Shows the roll list with percentages. If a specific tier is specified, it will show only that tier instead.
         """
         
-        #if listTier = None:
-        await ctx.send("coming soon !!")
+        await ctx.send("check github xdd")

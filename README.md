@@ -20,3 +20,5 @@ I am not an official repository, but you may follow any of the major repository 
 Cogs included:
 
 Gacha - A text-based gachapon game. To elaborate, it selects random objects from a database using an non-parity weight scheme.
+
+Mahjong - Text-based mahjong. Just single player atm. Boring, right?
