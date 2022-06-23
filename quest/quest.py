@@ -40,9 +40,8 @@ class Quest(commands.Cog):
     async def account(self, ctx):
         """Creates account for quest RPG"""
         embed = discord.Embed(colour=0xFF0000, description="Test")
-        embed.setThumbnail('https://i.imgur.com/UioE5ls.png')
-        #embed.set_author()
-        embed.addField(name="__Account__", value=account_defaults)
-        embed.setTimestamp()
-        embed.setFooter({text: "footer"})
+        embed.set_thumbnail('https://i.imgur.com/UioE5ls.png')
+        embed.add_field(name=_("{}'s Profile").format(ctx.author.name)), value="l0l",
+        embed.add_field(name="__Stats__", value=account_defaults)
+        embed.set_footer({text: "footer"})
         await ctx.send(embed=embed)
