@@ -37,7 +37,7 @@ class Quest(commands.Cog):
         await ctx.send("Account created!")
 
     @commands.command()
-    async def account(self, ctx, player: None):
+    async def account(self, ctx):
         """Creates account for quest RPG"""
         embed = discord.Embed(colour=0xFF0000, description="Test")
         embed.setThumbnail('https://i.imgur.com/UioE5ls.png')

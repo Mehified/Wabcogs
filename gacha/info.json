@@ -2,7 +2,7 @@
     "author" : ["Mehified"],
     "min_bot_version" : [3,4,17],
     "description" : "Gachapon style game",
-    "install_msg" : "Desire sensor is real"
+    "install_msg" : "Desire sensor is real",
     "min_python_version" : [3,9,1],
     "name" : "Gacha",
     "short" : "Gacha",
