@@ -11,7 +11,7 @@ import discord
 
 class Quest(commands.Cog):
     """
-   Quest
+   Small text-based RPG.
     """
 
     def __init__(self, bot: Red) -> None:
@@ -22,11 +22,7 @@ class Quest(commands.Cog):
             force_registration=True,
         )
 
-    @quest()
+    @commands.command()
     async def queststart(self, ctx):
         """Creates account for quest RPG"""
         await ctx.send("Account created!")
-    
-    async def red_delete_data_for_user(self, *, requester: RequestType, user_id: int) -> None:
-        # TODO: Replace this with the proper end user data removal handling.
-        super().red_delete_data_for_user(requester=requester, user_id=user_id)
