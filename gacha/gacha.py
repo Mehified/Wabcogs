@@ -29,11 +29,12 @@ class Gacha(commands.Cog):
             "Varun's Mom": {},
             "Hoodrat Jordan": {},
             "Daughter Arta": {},
-            "T-Time Cosplay Pat": {},
+            "T-Time Pat": {},
             "GAYM": {},
             "Roar": {},
             "Sleeping Prim": {},
-            "Kinx, the Avatar of Idol Hell": {}
+            "Kinx, the Avatar of Idol Hell": {},
+            "Leanne Jin": {}
         }
         dictA = {
             "cho": {},
@@ -95,21 +96,21 @@ class Gacha(commands.Cog):
         return convertList
         
     @commands.command()
-    async def gacha(self, ctx, rollNumber : int = None):
+    async def gacha(self, ctx, rollNumber : int = 10):
         """
         Plays the gacha game.
         """
             
         #avoid overrolling
-        if rollNumber is None:
-            rollNumber = 10
-        elif rollNumber > 20:
+        if rollNumber > 20:
             await ctx.send("Please don't be greedy.")
             return
         elif rollNumber <= 0:
-            await ctx.send("You want me to take away your pulls?..")
+            await ctx.send("?")
+            return
         else:
-            pass
+            await ctx.send("I don't understand.")
+            return
             
         rollList = []
         while len(rollList) < rollNumber:

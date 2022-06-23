@@ -1,10 +1,9 @@
 # Wabcogs
 
-This is a small set of cog add-ons developed for Red Bot V3. Please see https://red-discordbot.readthedocs.io/en/v3-develop/index.html for more details.
+This is a small set of cog add-ons developed for Red, a bot. See https://docs.discord.red/en/stable/index.html for more information.
 
 How to install:
 I am not an official repository, but you may follow any of the major repository instructions.
-
 
     [p]repo add Wabcogs https://github.com/Mehified/Wabcogs
 
@@ -19,6 +18,6 @@ I am not an official repository, but you may follow any of the major repository 
 
 Cogs included:
 
-Gacha - A text-based gachapon game. To elaborate, it selects random objects from a database using an non-parity weight scheme.
+Gacha - A text-based gachapon game. To elaborate, it selects random objects from a database using an non-parity weight scheme. WIP.
 
-Mahjong - Text-based mahjong. Just single player atm. Boring, right?
+Mahjong - Text-based mahjong. WIP.
