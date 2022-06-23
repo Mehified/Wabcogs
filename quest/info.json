@@ -1,13 +1,6 @@
 {
     "author" : ["Mehified"],
-    "min_bot_version" : "3.4.17",
-    "description" : "Simple text-based RPG",
-    "install_msg" : "Let's get adventuring! Usage: [p]quest",
-    "min_python_version" : [3,9,1],
     "name" : "Quest",
-    "short" : "Quest",
-    "permissions" : [
-        "embed_links"
-    ],
-    "tags" : ["game"],
+    "description" : "Simple text-based RPG",
+    "min_python_version" : [3,9,1],
 }

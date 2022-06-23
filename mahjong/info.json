@@ -1,13 +1,6 @@
 {
     "author" : ["Mehified"],
-    "min_bot_version" : [3,4,17],
-    "description" : "mahjong",
-    "install_msg" : "mahjong",
-    "min_python_version" : [3,9,1],
     "name" : "Mahjong",
-    "short" : "Mahjong",
-    "permissions" : [
-        "embed_links"
-    ],
-    "tags" : ["game"],
+    "description" : "Mahjong",
+    "min_python_version" : [3,9,1],
 }
