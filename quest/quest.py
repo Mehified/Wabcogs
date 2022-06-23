@@ -16,11 +16,6 @@ class Quest(commands.Cog):
 
     def __init__(self, bot: Red) -> None:
         self.bot = bot
-        self.config = Config.get_conf(
-            self,
-            identifier=quest,
-            force_registration=True,
-        )
 
     @commands.command()
     async def queststart(self, ctx):
