@@ -1,6 +1,13 @@
 {
     "author" : ["Mehified"],
+    "install_msg" : "",
     "name" : "Gacha",
-    "description" : "Gacha",
-    "min_python_version" : [3,9,1],
+    "short" : "Gacha",
+    "requirements" : ["tabulate"],
+    "description" : "Play gacha",
+    "permissions" : ["Manage Messages", "Embed Links"],
+    "tags" : ["Games"],
+    "min_python_version": [3, 9, 1],
+    "min_bot_version": "3.4.1",
+    "end_user_data_statement": "This cog stores discord IDs as needed for operation."
 }

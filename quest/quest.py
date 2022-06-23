@@ -43,5 +43,5 @@ class Quest(commands.Cog):
         embed.set_thumbnail(url='https://i.imgur.com/UioE5ls.png')
         #embed.add_field(name=_("{}'s Profile").format(ctx.author.name)), value="l0l",
         #embed.add_field(name="__Stats__", value=account_defaults)
-        embed.set_footer(text=_("heya"))
+        embed.set_footer(text='heya')
         await ctx.send(embed=embed)
