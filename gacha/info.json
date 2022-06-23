@@ -1,32 +1,13 @@
 {
-    "author" : [
-        "Mehified"
-    ],
-    "bot_version" : [
-        3,
-        4,
-        17
-    ],
-    "description" : "Text-based gachapon. Try your luck.",
-    "disabled" : false,
-    "hidden" : false,
-    "install_msg" : "Usage: `[p]gacha",
-    "min_python_version" : [
-        3,
-        9,
-        1
-    ],
+    "author" : ["Mehified"],
+    "min_bot_version" : [3,4,17],
+    "description" : "Gachapon style game",
+    "install_msg" : "Desire sensor is real"
+    "min_python_version" : [3,9,1],
     "name" : "Gacha",
+    "short" : "Gacha",
     "permissions" : [
         "embed_links"
     ],
-    "required_cogs" : {},
-    "requirements" : {},
-    "short" : "Gacha",
-    "tags" : [
-        "fun",
-        "game",
-        "random"
-    ],
-    "type" : "COG"
+    "tags" : ["game"],
 }

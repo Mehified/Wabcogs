@@ -1,13 +1,27 @@
-from typing import Literal
-
+import asyncio
+import random
 import discord
+import calendar
+
 from redbot.core import commands
 from redbot.core.bot import Red
 from redbot.core.config import Config
+from redbot.core.utils.predicates import MessagePredicate
 
-RequestType = Literal["discord_deleted_user", "owner", "user", "user_strict"]
+from .data import Database
 
-import discord
+account_defaults = {
+    "Level": 1,
+    "HP": 10,
+    "Stamina": 100,
+    "STR": 1,
+    "AGI": 1,
+    "INT": 1,
+    "END": 1,
+    "Inventory": { },
+    "Money": { },
+    "Materials": { },
+}
 
 class Quest(commands.Cog):
     """
@@ -21,3 +35,14 @@ class Quest(commands.Cog):
     async def queststart(self, ctx):
         """Creates account for quest RPG"""
         await ctx.send("Account created!")
+
+    @commands.command()
+    async def account(self, ctx, player: None):
+        """Creates account for quest RPG"""
+        embed = discord.Embed(colour=0xFF0000, description="Test")
+        embed.setThumbnail('https://i.imgur.com/UioE5ls.png')
+        #embed.set_author()
+        embed.addField(name="__Account__", value=account_defaults)
+        embed.setTimestamp()
+        embed.setFooter({text: "footer"})
+        await ctx.send(embed=embed)

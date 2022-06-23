@@ -1,32 +1,13 @@
 {
-    "author" : [
-        "Mehified"
-    ],
-    "bot_version" : [
-        3,
-        0,
-        0
-    ],
-    "description" : "Text-based mahjong",
-    "disabled" : false,
-    "hidden" : false,
-    "install_msg" : "Usage: `[p]mahjong` `[p]mahjong stop` `[p]tile/show ()/etc.`",
-    "min_python_version" : [
-        3,
-        6,
-        2
-    ],
+    "author" : ["Mehified"],
+    "min_bot_version" : [3,4,17],
+    "description" : "mahjong",
+    "install_msg" : "mahjong"
+    "min_python_version" : [3,9,1],
     "name" : "Mahjong",
+    "short" : "Mahjong",
     "permissions" : [
         "embed_links"
     ],
-    "required_cogs" : [],
-    "requirements" : [],
-    "short" : "Mehified",
-    "tags" : [
-        "fun",
-        "game",
-        "random"
-    ],
-    "type" : "COG"
+    "tags" : ["game"],
 }
