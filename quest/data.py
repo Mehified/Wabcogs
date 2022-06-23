@@ -20,7 +20,7 @@ account_defaults = {
     "Materials": { },
 }
 
-class Database
+class Database:
 
     def __init__(self):
         self.config.register_account(**account_defaults)
