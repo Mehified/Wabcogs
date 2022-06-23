@@ -1,0 +1,31 @@
+{
+    "author" : [
+        "Mehified"
+    ],
+    "bot_version" : [
+        3,
+        4,
+        17
+    ],
+    "description" : "Simple text-based RPG",
+    "disabled" : false,
+    "hidden" : false,
+    "install_msg" : "Usage: `[p]quest"
+    "min_python_version" : [
+        3,
+        9,
+        1
+    ],
+    "name" : "Quest",
+    "permissions" : [
+        "embed_links"
+    ],
+    "required_cogs" : {},
+    "requirements" : {},
+    "short" : "Mehified",
+    "tags" : [
+        "game",
+        "random"
+    ],
+    "type" : "COG"
+}

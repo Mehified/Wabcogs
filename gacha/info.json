@@ -4,8 +4,8 @@
     ],
     "bot_version" : [
         3,
-        0,
-        0
+        4,
+        17
     ],
     "description" : "Text-based gachapon. Try your luck.",
     "disabled" : false,
@@ -13,15 +13,15 @@
     "install_msg" : "Usage: `[p]gacha",
     "min_python_version" : [
         3,
-        6,
-        2
+        9,
+        1
     ],
     "name" : "Gacha",
     "permissions" : [
         "embed_links"
     ],
-    "required_cogs" : [],
-    "requirements" : [],
+    "required_cogs" : {},
+    "requirements" : {},
     "short" : "Gacha",
     "tags" : [
         "fun",
