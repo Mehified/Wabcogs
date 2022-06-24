@@ -11,7 +11,7 @@ from .data import Database
 
 class Mining(commands.Cog):
     """
-   Small text-based RPG.
+   Mining module
     """
 
     def __init__(self, bot: Red) -> None:
@@ -29,10 +29,12 @@ class Mining(commands.Cog):
         
         embed = discord.Embed(colour=0xFF00FF, description="__Result__")
         embed.set_thumbnail(url='https://i.imgur.com/UioE5ls.png')
+        embed.add_field(name = "stone", value = "1")
+        '''
         for ore in oreList:
             mineAttempt = random()
             if mineAttempt < oreProb[ore]:
                 mineResult[ore] += 1
                 embed.add_field(name = oreList[ore], value = "1")
-        
+        '''
         await ctx.send(embed=embed)
