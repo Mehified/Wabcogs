@@ -36,6 +36,8 @@ class Quest(commands.Cog):
     async def mine(self, ctx: commands.Context):
         """Mining action"""
         #check stamina
+        account_defaults['Stamina'] -= 1
+        
         await ctx.send("Mining...")
         oreList = ["stone", "coal", "copper", "iron", "silver", "gold", "platinum", "titanium", "diamond"]
         oreProb = [0.9, 0.7, 0.55, 0.5, 0.4, 0.25, 0.15, 0.1, 0.05, 0.005]
@@ -48,6 +50,7 @@ class Quest(commands.Cog):
             index = oreList.index(ore)
             if mineAttempt < oreProb[index]:
                 mineResult[index] += 1
+                mineAttempt = random.random()
                 embed.add_field(name = ":rock:" + oreList[index] + "\n", value = str(mineResult[index]))
 
         await ctx.send(embed=embed)
