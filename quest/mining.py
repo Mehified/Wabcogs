@@ -17,7 +17,7 @@ class Mining(commands.Cog):
     def __init__(self, old_message_cache):
         self.old_message_cache = old_message_cache
     
-    @mining("Mining")
+    #@commands.command()
     async def mine(self, ctx):
 
         oreList = ["stone", "coal", "copper", "iron", "silver", "gold", "platinum", "titanium", "diamond"]
