@@ -27,13 +27,12 @@ class Mining(commands.Cog):
         mineResult = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         mineAttempt = 0
         
-        
-        embed = discord.Embed(colour=0xFF0000, description="__Result__")
+        embed = discord.Embed(colour=0xFF00FF, description="__Result__")
         embed.set_thumbnail(url='https://i.imgur.com/UioE5ls.png')
         for ore in oreList:
-            mineAttempt = rand(0, 1)
+            mineAttempt = random()
             if mineAttempt < oreProb[ore]:
                 mineResult[ore] = 1
-                embed.add_field(name = oreList[ore], value = str(mineResult[ore])
+                embed.add_field(name = oreList[ore], value = "1")
         
         await ctx.send(embed=embed)
