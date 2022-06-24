@@ -14,12 +14,11 @@ class Mining(commands.Cog):
    Mining module
     """
 
-    def __init__(self, bot: Red) -> None:
-        self.bot = bot
-
-    @commands.command()
+    def __init__(self, old_message_cache):
+        self.old_message_cache = old_message_cache
+    
+    @mining("Mining")
     async def mine(self, ctx):
-        """mining"""
 
         oreList = ["stone", "coal", "copper", "iron", "silver", "gold", "platinum", "titanium", "diamond"]
         oreProb = [0.9, 0.7, 0.55, 0.5, 0.4, 0.25, 0.15, 0.1, 0.05, 0.005]
