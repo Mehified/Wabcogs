@@ -33,7 +33,7 @@ class Quest(commands.Cog):
         super().__init__()
 
     @commands.command()
-    async def mine(self, ctx: commands.Context, var : int):
+    async def mine(self, ctx: commands.Context, var : str):
         """Mining action"""
         #check stamina
         await ctx.send("Mining...")
