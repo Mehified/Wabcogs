@@ -48,7 +48,7 @@ class Quest(commands.Cog):
             index = oreList.index(ore)
             if mineAttempt < oreProb[index]:
                 mineResult[index] += 1
-                embed.add_field(name = "::rock::" + oreList[index], value = "1")
+                embed.add_field(name = ":rock:" + oreList[index] + "\n", value = str(mineResult[index])
 
         await ctx.send(embed=embed)
 
