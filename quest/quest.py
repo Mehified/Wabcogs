@@ -30,12 +30,13 @@ class Quest(commands.Cog):
 
     def __init__(self, bot: Red) -> None:
         self.bot = bot
+        super().__init__()
 
     @commands.command()
     async def mine(self, ctx: commands.Context):
         """Mining action"""
         #check stamina
-        await Mining(self.old_message_cache).mine(ctx)
+        await Mining.mine(ctx)
 
     @commands.command()
     async def queststart(self, ctx):
@@ -45,9 +46,9 @@ class Quest(commands.Cog):
     @commands.command()
     async def account(self, ctx):
         """Creates account for quest RPG"""
-        embed = discord.Embed(colour=0xFF0000, description="Account Information")
+        embed = discord.Embed(colour=0xFF0000, description="__Account Information__")
         embed.set_thumbnail(url='https://i.imgur.com/UioE5ls.png')
         #embed.add_field(name=_("{}'s Profile").format(ctx.author.name)), value="l0l",
-        embed.add_field(name="__Stats__", value=str(account_defaults))
-        embed.set_footer(text='heya')
+        embed.add_field(name="*Stats*", value=str(account_defaults))
+        embed.set_footer(text='Lookin\' good!')
         await ctx.send(embed=embed)
