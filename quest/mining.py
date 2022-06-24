@@ -14,8 +14,8 @@ class Mining(commands.Cog):
    Mining module
     """
 
-    def __init__(self, bot: Red) -> None:
-        self.bot = bot
+    def __init__(self, old_message_cache):
+        self.old_message_cache = old_message_cache
 
     @commands.command()
     async def mine(self, ctx):

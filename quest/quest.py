@@ -32,10 +32,10 @@ class Quest(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def mine(self, ctx):
+    async def mine(self, ctx: commands.Context):
         """Mining action"""
         #check stamina
-        await Mining.mine(ctx)
+        await Mining(self.old_message_cache).mine(ctx)
 
     @commands.command()
     async def queststart(self, ctx):
