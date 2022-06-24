@@ -23,8 +23,8 @@ class Mining(commands.Cog):
         
         #check stamina
         oreList = ["stone", "coal", "copper", "iron", "silver", "gold", "platinum", "titanium", "diamond"]
-        oreProb = [0.9, 0.75, 0.55, 0.5, 0.4, 0.25, 0.15, 0.1, 0.05, 0.005]
-        mineResult = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        oreProb = [0.9, 0.7, 0.55, 0.5, 0.4, 0.25, 0.15, 0.1, 0.05, 0.005]
+        mineResult = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         mineAttempt = 0
         
         embed = discord.Embed(colour=0xFF00FF, description="__Result__")
@@ -32,7 +32,7 @@ class Mining(commands.Cog):
         for ore in oreList:
             mineAttempt = random()
             if mineAttempt < oreProb[ore]:
-                mineResult[ore] = 1
+                mineResult[ore] += 1
                 embed.add_field(name = oreList[ore], value = "1")
         
         await ctx.send(embed=embed)
