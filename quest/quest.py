@@ -33,7 +33,7 @@ class Quest(commands.Cog):
         super().__init__()
 
     @commands.command()
-    async def mine(self, ctx: commands.Context, var : str):
+    async def mine(self, ctx: commands.Context):
         """Mining action"""
         #check stamina
         await ctx.send("Mining...")
@@ -48,7 +48,7 @@ class Quest(commands.Cog):
             index = oreList.index(ore)
             if mineAttempt < oreProb[index]:
                 mineResult[index] += 1
-                embed.add_field(name = "::rock::" + oreList[ore], value = "1")
+                embed.add_field(name = "::rock::" + oreList[index], value = "1")
 
         await ctx.send(embed=embed)
 
