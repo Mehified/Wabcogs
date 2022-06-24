@@ -44,7 +44,7 @@ class Quest(commands.Cog):
         embed = discord.Embed(colour=0xFF00FF, description="__**Result**__")
         
         for ore in oreList:
-            mineAttempt = random()
+            mineAttempt = random.random()
             if mineAttempt < oreProb[ore]:
                 mineResult[ore] += 1
                 embed.add_field(name = oreList[ore], value = "1")
