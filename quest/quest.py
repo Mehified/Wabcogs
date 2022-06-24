@@ -8,6 +8,7 @@ from redbot.core.bot import Red
 from redbot.core.config import Config
 
 from .data import Database
+from .mining import Mining
 
 account_defaults = {
     "Level": 1,
@@ -29,6 +30,12 @@ class Quest(commands.Cog):
 
     def __init__(self, bot: Red) -> None:
         self.bot = bot
+
+    @commands.command()
+    async def mine(self, ctx):
+        """Mining action"""
+        #check stamina
+        await Mining.mine(ctx)
 
     @commands.command()
     async def queststart(self, ctx):

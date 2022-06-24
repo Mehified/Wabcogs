@@ -20,12 +20,13 @@ class Mining(commands.Cog):
     @commands.command()
     async def mine(self, ctx):
         """mining"""
-        
-        #check stamina
+
         oreList = ["stone", "coal", "copper", "iron", "silver", "gold", "platinum", "titanium", "diamond"]
         oreProb = [0.9, 0.7, 0.55, 0.5, 0.4, 0.25, 0.15, 0.1, 0.05, 0.005]
         mineResult = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         mineAttempt = 0
+        
+        await ctx.send("Mining...")
         
         embed = discord.Embed(colour=0xFF00FF, description="__Result__")
         embed.set_thumbnail(url='https://i.imgur.com/UioE5ls.png')
@@ -37,4 +38,4 @@ class Mining(commands.Cog):
                 mineResult[ore] += 1
                 embed.add_field(name = oreList[ore], value = "1")
         '''
-        await ctx.send(embed=embed)
+        return ctx.send(embed=embed)
